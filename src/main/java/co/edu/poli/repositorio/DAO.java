@@ -1,0 +1,15 @@
+package co.edu.poli.repositorio;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class DAO<T> implements CRUD<T> {
+
+    protected List<T> dataSource;
+
+    public DAO() {
+        this.dataSource = new ArrayList<>();
+    }
+
+
+}
